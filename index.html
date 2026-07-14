@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       flex: 1;
-      min-height: 100dvh;
+      min-height: 1calc(var(--vh, 1vh) * 100);
       background-color: #1e1e20;
     }
 
@@ -79,8 +79,20 @@
       color: #aaa;
       font-size: 0.9rem;
       font-family: 'Courier New', monospace;
-      overflow-y: hidden;
       overflow-x: hidden;
+    }
+
+    .img-wrapper {
+      flex: 1
+      min-width: 0
+    }
+
+    .img-wrapper img {
+      width: 100%
+      height: auto;
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -99,7 +111,7 @@
       <div style="clear: both; float: right; margin-right: 1.5vw; max-width: 19vw; font-size: 0.75rem">↑ random box with the domain for no reason</div>
       <div style="font-size: 2rem;">Welcome to sckart.xyz!<br>I write articles about stuff I find interesting and may start making tools in the future<div style="font-size: 0.75rem">Would be a shame if I decide I don't wanna do that and end up having to delete the tools tab from the navbar on all pages lol ;b</div></div>
       <div style="font-size: 1.2rem;">Here's a cat meme:</div>
-      <img style="max-width: 50vh;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic1.thegamerimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2023%2F04%2Fmeme-example-it-s-dangerous-to-go-alone-kitten.jpg&f=1&nofb=1&ipt=a1cc6b9a12df410911ae75d712f507617807e1a2cdbb82e3c33055e4d527cd94" alt="It's too dangerous to go alone! Take this. Cat meme from thegamer.com">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic1.thegamerimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2023%2F04%2Fmeme-example-it-s-dangerous-to-go-alone-kitten.jpg&f=1&nofb=1&ipt=a1cc6b9a12df410911ae75d712f507617807e1a2cdbb82e3c33055e4d527cd94" alt="It's too dangerous to go alone! Take this. Cat meme from thegamer.com">
     </main>
 
     <nav class="navbar">
