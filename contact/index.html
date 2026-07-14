@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact @ sckart.xyz</title>
+  <meta name="description" content="Contact page at sckart.xyz">
+  <link rel="icon" href="/favicon.png" sizes="192x192" type="image/png">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      min-height: 100dvh;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100dvh;
+      background-color: #333333;
+      font-family: 'Georgia', serif;
+    }
+
+    .page-wrapper {
+      margin: 0 auto;
+      width: 85vw;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 100dvh;
+      background-color: #1e1e20;
+    }
+
+    .navbar {
+      height: auto;
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      flex-shrink: 0;
+      background-color: #000000;
+      color: #888;
+      font-family: 'Courier New', monospace;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      width: 100%;
+    }
+
+    .navbar a {
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      font-family: 'Courier New', monospace;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .navbar a:hover {
+      color: #ccc;
+    }
+
+    .content {
+      flex: 1;
+      padding: 0.5rem 0.5rem 0.5rem 1.2rem;
+      overflow-y: auto;
+      color: #aaa;
+      font-size: 0.9rem;
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav class="navbar">
+      <ul>
+        <li><a href="/index.html">sckart.xyz</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/tools/">tools</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <div style="font-size: 2rem;">You can contact us here:<br>
+      <a href="mailto:sckart.xyz.contact@gmail.com">sckart.xyz.contact@gmail.com</a></div><br><br>
+      <div style="font-size: 1.5rem;">Why a google email address?</div>
+      There are two reasons for that:<br><br>
+      1. I don't want to pay for email, and protonmail, the only privacy-focused email provider I know has a limit of 2 email addresses per device, which I have already used up.<br><br>
+      2. I can't really have an @sckart.xyz email address, as that might lead to you not being able to receive any emails from me. Also, I'm too broke to have a server running 24/7 just for receiving your emails.
+    </main>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li style="margin-left: auto;"><p>Hello World!</p></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
