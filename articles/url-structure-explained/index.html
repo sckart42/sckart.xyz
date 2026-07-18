@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>All parts of a URL explained</title>
+  <meta name="description" content="Explaining https, subdomains, registered domains, SLDs, TLDs, and paths.">
+  <link rel="icon" href="/favicon.png" sizes="192x192" type="image/png">
+
+  <link rel="stylesheet" href="/style-generic.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav class="navbar">
+      <ul>
+        <li><a href="/index.html">sckart.xyz</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/tools/">tools</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <h1>What do all the parts of a URL mean:</h1>
+      <h3>Explaining https, subdomains, registered domains, SLDs, TLDs, and paths</h3>
+      
+      <div style="margin-right: 0.7rem; justify-content: center; display: flex; margin-top: 1.5rem; margin-bottom: 1.5rem;"><img src="url.png" alt="URL structure visualized" style="width: 100%"></div>
+  
+      <h2>Part 1: https://</h2>
+      https:// or http:// stands for "Hypertext Transfer Protocol (Secure)"<br>
+      The difference between the two is the last part - "Secure"<br><br>
+      If the website has an SSL certificate, its URLs will start with https://, and be encrypted, otherwise the URLs will start with http://, and not be encrypted.<br><br>
+      This actually depends on whether TLS is configured, but it usually is configured automatically when obtaining an SSL certificate.<br><br>
+      <h3>The practical difference for you, as the user</h3><br>
+      If a website has no TSL configured, the connection is not secure. If a website has TLS, the connection will be encrypted.<br><br>
+      That means that data transferred between you and the website will only be accessible to you and the website. Any middlemen, like your ISP (Internet Service Provider) or VPN will only see the destination (the website), not the data.<br><br>
+      Using "not secure" websites, websites that start with http:// is safe, but your ISP, VPN, or even wifi router can see what you enter into forms, what accounts you log in to, etc. in plain text. This is particularly dangerous if you're connected to a public wifi network or your home wifi has been compromised.<br>
+      <div style="margin-right: 0.7rem; justify-content: center; display: flex; margin-top: 1rem; margin-bottom: 1.5rem; width: 75vw;"><img src="not-secure-example.png" alt='Examples of the "Not Secure" warning in different browsers (on mobile)' title='Examples of the "Not Secure" warning in different browsers (on mobile)' style="width: 100%"></div>
+      
+      <h2>Part 2: Subdomains</h2>
+      It's the "www" in www.domain.com. User-defined.<br><br>
+      Subdomains are in a lot of ways treated as different websites.<br><br>
+      For example, cookies aren't inherited from www.domain.com to shop.domain.com.<br><br>
+      Different subdomains can also have the same paths that lead to different pages, so www.domain.com/home/ is a different page from shop.domain.com/home/.<br><br>
+      Different subdomains can be set to point to different directories on the server in the settings of your DNS.
+      
+      <h2 style="margin-top: 1.5rem;">Part 3: Registered Domains</h2>
+      It'a the "domain.com" in www.domain.com.
+      A registeted domain is essential to running a website. <span style="font-size: 0.75rem;">Further in this part just "domain".</span><br><br>
+      The domain is your domain.com. You have to buy it, or rather rent. Domains are sold for a fixed amount per year.<br><br>
+      You might be wondering who's selling them and where they got the domains from.<br><br>
+      The domains are sold by domain registrars.<br><br>
+      They buy the domains from regitr<u>ies</u> (which operate specific TLDs, more on that later). The registries get their domains directly from ICANN.<br><br>
+      Domains are usually relatively cheap, for example, mine is ~7€/year. It's a .xyz domain, so it's cheaper than a .com, but those are still usually below 20€/year.
+      
+      
+      <h2 style="margin-top: 1.5rem;">Part 4: SLDs (Second-Level Domains)</h2>
+      It's the "domain" in www.domain.com. There's not much to it. User-defined when bying the registered domain.
+      
+      <h2 style="margin-top: 1.5rem;">Part 5: TLDs (Top-Level Domains)</h2>
+      It's the ".com" in www.domain.com. Has to be picked from a list.<br><br>
+      Some TLDs are only available if you meet certain requirements, for example, .us requires you to be a citizen, a resident, or an organization with a presence in the Unites States.
+      
+      <h2 style="margin-top: 1.5rem;">Part 6: Paths</h2>
+      It's the "/path/" in https://www.domain.com/path/<br><br>
+      Shows the absolute path to the webpage inside of the website directory. For example, this page you're on is located in sckart.xyz/articles/url-structure-explained/ - the folder can be named anything, btw.<br><br>
+      Now, why does it not show the actual file in the URL? What if there are multiple webpages in that folder?<br><br>
+      It does! Why don't you see it? That's because the file is named "index.html" (the extension doesn't have to be .html).<br><br>
+      Files named "index" don't show up in the URL, and are the default webpage you get if you only input the path.<br><br><br>
+      <h3>Thanks for reading! I hope you got what you were looking for!</h3>
+    </main>
+
+    <nav class="navbar" style="bottom: 0;">
+      <ul>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li style="margin-left: auto;"><p>Hello World!</p></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
